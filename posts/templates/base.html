@@ -1,0 +1,22 @@
+<html>
+    <head>
+      <title>Piazza</title>
+    </head>
+    <body>
+      <header>
+        <div class="nav-left">
+          <h1><a href="{% url 'home' %}">Piazza</a></h1>
+          
+        </div>
+        <div class="nav-right">
+          <a href="{% url 'post_new' %}">Add Post</a>
+        </div>
+      </header>
+  
+      <div>
+      {% block content %} {% endblock content %}
+        
+
+      </div>
+    </body>
+  </html>
